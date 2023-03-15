@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+<body>
+    <div class="header">
+        <figure class="container-img">
+            <img src="./assets/logo.png" alt="logo" class="logo">
+        </figure>
+        <div class="shopping-cart">
+            <figure class="container-img align-center">
+                <img src="./assets/shoppingcart_80945.svg" alt="cart" class="shopping-cart-icon"
+                    onclick="toggleListCart()">
+            </figure>
+            <div class="list-cart-products hidden-listCart" id="cart-list">
+                <div class="header-listCart">
+                    <h4 class="title-listCart">Carrito de compras</h4>
+                    <figure class="container-img">
+                        <img src="./assets/211652_close_icon.svg" alt="cart" class="close-icon"
+                            onclick="toggleListCart()">
+                    </figure>
+                </div>
+                <div class="cart-list-products" id="cart-list-products">
+                    <div class="text-empty-cart">
+                        <p>Carrito vacío.</p>
+                    </div>
+                </div>
+                <div class="text-total-price">
+                    <p id="total-price">TOTAL: $0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main" id="main">
+        
+    </div>
+</body>
+
+</html>
